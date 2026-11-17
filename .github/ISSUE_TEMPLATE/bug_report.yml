@@ -1,0 +1,47 @@
+name: 错误报告
+description: 报告可复现的软件问题
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: 请勿上传包含隐私、个人信息或未获授权的视频。
+  - type: input
+    id: version
+    attributes:
+      label: 版本或提交
+      placeholder: 例如 main@abcdef0
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 运行环境
+      placeholder: Windows 11、Python 3.12、FFmpeg 7.1
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      description: 请提供最小、明确的操作步骤。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为和错误信息
+      description: 请先移除文件路径、姓名等敏感信息。
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: 媒体信息
+      description: 可提供经过脱敏的 ffprobe 容器、视频和音频流信息。

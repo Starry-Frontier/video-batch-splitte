@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+output/
+.build-venv/
+build/
+dist/
+bin/*.exe
+*.zip
+*.7z
+.coverage
+htmlcov/
+.idea/
+.vscode/
